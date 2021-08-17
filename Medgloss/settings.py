@@ -36,7 +36,7 @@ DEBUG = env_to_bool('DJANGO_DEBUG', True)
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'www.medgloss.com']
+ALLOWED_HOSTS = ['*', '127.0.0.1', 'www.medgloss.com', 'medgloss.herokuapp.com']
 # Application definition
 
 
