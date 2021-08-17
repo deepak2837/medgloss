@@ -14,3 +14,4 @@ jieba
 whitenoise
 elasticsearch
 elasticsearch-dsl
+gunicorn
