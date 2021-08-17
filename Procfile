@@ -1,1 +1,1 @@
-web: gunicorn Medgloss.wsgi
+web: gunicorn Medgloss.wsgi --log-file -
