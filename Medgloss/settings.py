@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 import django_heroku
+import dj_database_url
 import sys
+
 
 import os
 
@@ -124,6 +126,8 @@ DATABASES = {
         'POST': '3306',
     }
 }
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 SESSION_COOKIE_SECURE = False
 # DATABASES = {
 #     'default': {
