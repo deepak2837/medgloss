@@ -119,11 +119,11 @@ WSGI_APPLICATION = 'Medgloss.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangoblog',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
-        'POST': '3306',
+        'NAME': 'dcpuaatn5fbdug',
+        'USER': 'lbqldbajmhunli',
+        'PASSWORD': 'cfde96a1980234cb400d1088d5da34984b1a87c4de1c74c04b9b11e3ac0f40c4',
+        'HOST': 'ec2-54-152-185-191.compute-1.amazonaws.com',
+        'POST': '5432',
     }
 }
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
