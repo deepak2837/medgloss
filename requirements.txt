@@ -14,3 +14,7 @@ jieba
 whitenoise
 elasticsearch
 elasticsearch-dsl
+gunicorn
+django-heroku
+dj-database-url
+psycopg2

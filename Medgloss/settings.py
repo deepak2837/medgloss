@@ -9,7 +9,11 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
+import django_heroku
+import dj_database_url
 import sys
+
+
 import os
 
 
@@ -34,7 +38,7 @@ DEBUG = env_to_bool('DJANGO_DEBUG', True)
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'www.medgloss.com']
+ALLOWED_HOSTS = ['*', '127.0.0.1', 'www.medgloss.com', 'medgloss.herokuapp.com']
 # Application definition
 
 
@@ -122,6 +126,9 @@ DATABASES = {
         'POST': '3306',
     }
 }
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 SESSION_COOKIE_SECURE = False
 # DATABASES = {
 #     'default': {
@@ -328,3 +335,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+# Activate Django-Heroku.
+django_heroku.settings(locals())
