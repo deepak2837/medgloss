@@ -2,7 +2,7 @@
 source = .
 include = *.py
 omit =
-    *migrations*
+    
     *tests*
     *.html
     *whoosh_cn_backend*
