@@ -1,7 +1,7 @@
 # medblog - a full fledged blogging website 
 check out the live version => www.medgloss.herokuapp.com
 
-## The main function:
+## The main featurs:
 - Articles, page, classified catalog, tag added, delete, editing, etc. Articles and page supports `markdown`, support code highlight.
 Support article full-text search.
 - Complete comment function, including post reply comments, and email reminder, support` Markdown`.
