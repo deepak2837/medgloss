@@ -1,4 +1,4 @@
-# medblog - a full fledged blogging website 
+# Medgloss - A full fledged blogging website 
 check out the live version => www.medgloss.herokuapp.com
 
 ## The main featurs:
