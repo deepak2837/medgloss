@@ -1,5 +1,5 @@
 # Medgloss - A full fledged blogging website 
-check out the live version => www.medgloss.herokuapp.com
+Check out the live version => http://medgloss.herokuapp.com
 
 ## The main featurs:
 - Articles, page, classified catalog, tag added, delete, editing, etc. Articles and page supports `markdown`, support code highlight.
